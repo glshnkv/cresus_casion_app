@@ -38,7 +38,31 @@ flutter:
 
   assets:
      - assets/images/
-
+     - assets/images/elements/
+     - assets/images/home/
+     - assets/images/puzzle/
+     - assets/images/puzzle/1/
+     - assets/images/puzzle/2/
+     - assets/images/puzzle/3/
+     - assets/images/puzzle/4/
+     - assets/images/puzzle/5/
+     - assets/images/puzzle/6/
+     - assets/images/puzzle/7/
+     - assets/images/puzzle/8/
+     - assets/images/puzzle/9/
+     - assets/images/puzzle/10/
+     - assets/images/puzzle/11/
+     - assets/images/puzzle/12/
+     - assets/images/puzzle/13/
+     - assets/images/puzzle/14/
+     - assets/images/puzzle/15/
+     - assets/images/puzzle/16/
+     - assets/images/puzzle/17/
+     - assets/images/puzzle/18/
+     - assets/images/puzzle/19/
+     - assets/images/puzzle/20/
+     - assets/images/statue/
+     - assets/images/victory/
 
   fonts:
     - family: Podkova
