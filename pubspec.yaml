@@ -18,6 +18,9 @@ dependencies:
   get_it: ^7.6.4
   flutter_launcher_icons: ^0.13.1
   shared_preferences: ^2.2.2
+  firebase_messaging: ^14.2.2
+  firebase_core: ^2.21.0
+  firebase_remote_config: ^4.3.3
 
   cupertino_icons: ^1.0.2
 

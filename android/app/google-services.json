@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "659160886492",
+    "project_id": "cresus-casion-app",
+    "storage_bucket": "cresus-casion-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659160886492:android:3eddeb62e408712d93d819",
+        "android_client_info": {
+          "package_name": "com.example.cresus_casion_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR-nIvun1hLOByqCn5bdzJptCqJ9m92h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
