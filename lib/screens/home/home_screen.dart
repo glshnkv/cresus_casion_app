@@ -75,6 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Container(
                   height: 450,
+                  width: 360,
                   child: Stack(
                     children: [
                       Align(

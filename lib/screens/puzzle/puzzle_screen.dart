@@ -85,6 +85,7 @@ class _PuzzleScreenState extends State<PuzzleScreen> {
               ),
             ),
             GridView.builder(
+              physics: NeverScrollableScrollPhysics(),
               padding: EdgeInsets.symmetric(horizontal: 16),
               shrinkWrap: true,
               itemCount: 9,
@@ -197,8 +198,8 @@ class _PuzzleScreenState extends State<PuzzleScreen> {
                         ),
                       ),
                       Container(
-                        width: 155,
-                        height: 155,
+                        width: 145,
+                        height: 145,
                         child: Stack(
                           alignment: Alignment.center,
                           children: [
@@ -208,30 +209,34 @@ class _PuzzleScreenState extends State<PuzzleScreen> {
                           ],
                         ),
                       ),
-                      GestureDetector(
-                          onTap: () {
-                            widget.puzzle.isCollect = true;
+                      Column(
+                        children: [
+                          GestureDetector(
+                              onTap: () {
+                                widget.puzzle.isCollect = true;
 
-                            widget.puzzle.puzzlePieces = savedPuzzlePieces.toSet().toList();
-                            context.router.push(HomeRoute());
-                          },
-                          child: SvgPicture.asset(
-                              'assets/images/victory/menu-button.svg')),
-                      GestureDetector(
-                          onTap: () {
-                            widget.puzzle.isCollect = true;
-                            widget.puzzle.puzzlePieces = savedPuzzlePieces.toSet().toList();
-                            if (widget.puzzle.id != 19) {
-                              context.router.push(PuzzleRoute(
-                                  puzzle:
-                                      puzzleRepository[widget.puzzle.id + 1]));
-                            } else {
-                              context.router.push(
-                                  PuzzleRoute(puzzle: puzzleRepository[0]));
-                            }
-                          },
-                          child: SvgPicture.asset(
-                              'assets/images/victory/next-button.svg')),
+                                widget.puzzle.puzzlePieces = savedPuzzlePieces.toSet().toList();
+                                context.router.push(HomeRoute());
+                              },
+                              child: SvgPicture.asset(
+                                  'assets/images/victory/menu-button.svg', width: 200,)),
+                          GestureDetector(
+                              onTap: () {
+                                widget.puzzle.isCollect = true;
+                                widget.puzzle.puzzlePieces = savedPuzzlePieces.toSet().toList();
+                                if (widget.puzzle.id != 19) {
+                                  context.router.push(PuzzleRoute(
+                                      puzzle:
+                                          puzzleRepository[widget.puzzle.id + 1]));
+                                } else {
+                                  context.router.push(
+                                      PuzzleRoute(puzzle: puzzleRepository[0]));
+                                }
+                              },
+                              child: SvgPicture.asset(
+                                  'assets/images/victory/next-button.svg', width: 250,)),
+                        ],
+                      ),
                     ],
                   )
                 ],
